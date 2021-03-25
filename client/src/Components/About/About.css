@@ -1,0 +1,22 @@
+body{
+    /* background-color: #171233; */
+    background-color: rgb(233, 233, 233);
+    height: 100vh;
+}
+
+.aboutTitle{
+    color: #2f2855;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    padding-top: 1.5em;
+
+}
+
+.aboutContainer{
+    display: flex;
+}
+
+.aboutSkills{
+    margin-left: 5em;
+}

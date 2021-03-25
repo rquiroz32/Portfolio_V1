@@ -6,7 +6,8 @@ class Navbar extends Component{
     render(){
         return(
         <nav className="nav">
-            <ul>
+            
+            <ul className ="nav-links">
                 <li>
                     <a href="/">Home</a>
                 </li>
@@ -20,6 +21,13 @@ class Navbar extends Component{
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
+            <div className="burger">
+                <div className = "line1"></div>
+                <div className = "line2"></div>
+                <div className = "line3"></div>
+            </div>
+        
+
 
         </nav>
         )
