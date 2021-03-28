@@ -1,0 +1,78 @@
+/*
+
+ overlay color is #29224C opacity 77%
+
+ pic dimensions: 1919px wide x 955.67 high
+
+
+ buttons 288.11px wide x 69 px high
+  background white 33% opacity
+  border solid #CEE722 border width is 10 in justinmind, not sure what that means
+
+*/
+
+ .Hero{
+  
+  height: 100vh;
+  
+  
+  
+} 
+
+
+header {
+  height: 600px;
+  width: 100vw;
+  background: #29224C;
+  overflow: hidden;
+  position: relative;
+}
+
+.contentContainer{
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  top: 60%;
+  left: 1;
+}
+
+.contentContainer > h1, button{
+ margin: 0em 4em;
+}
+
+img {
+  /* width: 100%;
+  height: 100vh; */
+  object-fit: cover;
+  opacity: 0.4;
+  overflow: hidden;
+  
+
+}
+
+
+.HeroTxt{
+  max-width: 10em;
+  font-size: 5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #DFFF00; 
+/*   
+  position: absolute;
+    top: 20%;
+    left:8%; */
+
+}
+
+.BtnContainer{
+  border-style: solid;
+  border-color: #DFFF00;
+  border-width: .25em;
+
+   /* position: absolute;
+   top: 30%;
+   right: 25%; */
+
+   width: 20em;
+   height: 5em;
+   
+}

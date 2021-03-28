@@ -10,13 +10,50 @@ body{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 24px;
     padding-top: 1.5em;
+    padding-bottom: .5em;
 
 }
 
 .aboutContainer{
     display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 2em 5em;
+    
 }
 
 .aboutSkills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-left: 5em;
+
+    width: 100%;     
+    border-style: solid;
+    border-width: .1rem;
+    list-style: none;
+    ;
+}
+
+.aboutText{
+    width: 100%;
+    max-width: 1024px;
+    border-style: solid;
+    border-width: .1rem;
+}
+
+.skill{
+    border-style: solid;
+    border-width: .1rem;
+    border-radius: .25em;
+    padding: .5em;
+    margin: .5em .5em;
+    text-align: center;
+    background-color: lightgray;
+    
+}
+
+@media all and (max-width:768px){
+    .aboutContainer{
+        flex-direction: column;
+    }
 }

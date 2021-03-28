@@ -15,14 +15,14 @@ class About extends Component {
                     </p>
 
                     <ul className="aboutSkills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Node.JS</li>
-                        <li>MongoDb</li>
-                        <li>React</li>
-                        <li>jQuery</li>
-                        <li>MySQL</li>
+                        <li className="skill">HTML</li>
+                        <li className="skill">CSS</li>
+                        <li className="skill">JavaScript</li>
+                        <li className="skill">Node.JS</li>
+                        <li className="skill">MongoDb</li>
+                        <li className="skill">React</li>
+                        <li className="skill">jQuery</li>
+                        <li className="skill">MySQL</li>
                     </ul>
 
                 </div>
