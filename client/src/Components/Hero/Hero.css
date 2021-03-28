@@ -31,14 +31,19 @@ header {
 .contentContainer{
   display: inline-flex;
   flex-direction: row;
+  justify-content: space-around;  
+  align-items: center;
   position: absolute;
-  top: 60%;
-  left: 1;
+  top: 20%;
+  left:7%;
+  
 }
 
-.contentContainer > h1, button{
+
+
+/*.contentContainer > h1, button{
  margin: 0em 4em;
-}
+}*/
 
 img {
   /* width: 100%;
@@ -53,26 +58,32 @@ img {
 
 .HeroTxt{
   max-width: 10em;
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: 'IBM Plex Mono', monospace;
   color: #DFFF00; 
-/*   
-  position: absolute;
-    top: 20%;
-    left:8%; */
+  
+
 
 }
 
 .BtnContainer{
+    height: 15em;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   margin-left: 5rem;
+}
+
+.HeroBtn{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
   border-style: solid;
   border-color: #DFFF00;
-  border-width: .25em;
-
-   /* position: absolute;
-   top: 30%;
-   right: 25%; */
-
-   width: 20em;
-   height: 5em;
-   
+  border-width: .5em;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #DFFF00;
+  width: 25vw;
+  height: 5em;
+  font-size: 1rem;
 }
