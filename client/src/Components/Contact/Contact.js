@@ -5,7 +5,9 @@ class Contact extends Component {
 
     render() {
         return(
-            <section className='section-Contact'></section>
+            <section className='section-Contact'>
+                <h1 className='contactTitle'>Contact</h1>
+            </section>
         )
     }
 }
