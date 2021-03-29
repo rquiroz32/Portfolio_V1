@@ -6,7 +6,7 @@
 
 .nav{
     background-color: #171233;
-    width: 100%;
+    width: 100vw;
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -16,7 +16,7 @@
     height: 8vh;
     justify-content:left;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .nav ul{
@@ -26,14 +26,15 @@
 
 .nav-links{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 50%;
-    margin-left: 3rem;
+    margin-left: 5vw;
+   
 }
 
 .nav a{
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 24px;
+    font-size: 2rem;
     color: #DFFF00;
     text-decoration: none;
 }
