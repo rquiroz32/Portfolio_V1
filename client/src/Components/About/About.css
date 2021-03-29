@@ -1,7 +1,7 @@
 .section-About{
     /* background-color: #171233; */
     background-color:white;
-    height: 50vh;
+    height: 60vh;
 }
 
 .aboutTitle{
@@ -40,6 +40,17 @@
     /* border-style: solid;
     border-width: .1rem; */
     list-style: none;
+    
+}
+
+.skillset-Label{
+    text-decoration: underline;
+    line-height: 1rem;
+    margin-left: 8rem;
+    margin-bottom: .3rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .9rem;
+    text-align: center;
     
 }
 

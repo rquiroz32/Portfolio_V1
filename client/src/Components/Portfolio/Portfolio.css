@@ -1,0 +1,14 @@
+.section-Portfolio{
+    background-color: #29224C;
+    height: 100vh;
+    width: 100vw;
+}
+
+.portfolio-Title{
+    color: #DFFF00;   
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.5rem;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+}
