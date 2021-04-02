@@ -68,15 +68,26 @@
 }
 
 @media all and (max-width:768px){
+    .section-About{
+        height: 100vh;
+    }
     .aboutContainer{
         flex-direction: column;
-        justify-content: space-around;
+        align-content: space-around;
+       flex-shrink: 2;
         }
 
+    .skillset-Label{
+        margin-left: 0;
+        padding-top: 2rem;
+    }
     .aboutSkills{
         margin-left: 0;
         margin-top: 2em;
         grid-template-columns: repeat(2, 1fr);
-        font-size: 1rem;
+        font-size: 1rem;        
     }
-}
+
+
+
+    }/*closes media query for mobile*/

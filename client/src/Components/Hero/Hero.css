@@ -58,7 +58,8 @@ img {
 
 .HeroTxt{
   max-width: 10em;
-  font-size: 7rem;
+  /* font-size: 7rem; */
+  font-size: 5vw;
   font-family: 'IBM Plex Mono', monospace;
   color: #DFFF00;   
   }
