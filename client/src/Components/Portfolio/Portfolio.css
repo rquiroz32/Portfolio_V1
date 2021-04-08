@@ -12,3 +12,8 @@
     padding-top: 1.5em;
     padding-bottom: .5em;
 }
+
+.portfolio-Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
