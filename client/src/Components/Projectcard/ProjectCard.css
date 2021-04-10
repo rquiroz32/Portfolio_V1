@@ -1,8 +1,57 @@
 .project-Card {
     margin-top: 2rem;
+    align-self: center;
+    justify-self: center;
+    background-color: #2f2855;
+    
+
 }
 
 .project-Title {
+    text-align: center;
+    font-size: 1.6rem;
     font-family: 'IBM Plex Mono', monospace;
     color: #DFFF00;
+ 
+}
+
+.project-Image {
+    display: block;
+    margin: 1rem auto;
+    /* margin: .25rem 10rem; */
+}
+
+.project-Description {
+    margin-top: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15rem;
+    color: #DFFF00;
+}
+
+.project-BtnContainer {
+   
+    display: flex;
+    justify-content: center;
+}
+
+.project-Btn {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #DFFF00;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #DFFF00;
+    margin: .50rem .75rem;
+    width: 6rem;
+    height: 1.25rem;
+    background: #fff;
+    /* fallback color for old browsers */
+    background: rgba(255, 255, 255, 0.2);
+    padding-bottom: 1.25rem;
+    cursor: pointer;
+}
+
+
+@media all and (max-width:768px){
+
 }
