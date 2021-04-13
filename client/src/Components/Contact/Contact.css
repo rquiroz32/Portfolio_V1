@@ -12,3 +12,17 @@
     padding-bottom: .5em;
 
 }
+
+.form-Container{
+    display: flex;
+}
+
+.form-Submit{
+    width: 8rem;
+    height: 1.75rem;
+    font-size: 1rem;
+    color: #2f2855;
+    font-family: 'IBM Plex Mono', monospace;
+    padding-bottom: 1.25rem;
+    
+}

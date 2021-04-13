@@ -2,8 +2,7 @@
     margin-top: 2rem;
     align-self: center;
     justify-self: center;
-    background-color: #2f2855;
-    
+      
 
 }
 
@@ -29,7 +28,7 @@
 }
 
 .project-BtnContainer {
-   
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
 }

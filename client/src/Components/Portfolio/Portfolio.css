@@ -16,7 +16,13 @@
 .portfolio-Container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0rem 1rem;
+    row-gap: 2rem;
 }
+
+
+
+
 
 @media all and (max-width:900px){
     
