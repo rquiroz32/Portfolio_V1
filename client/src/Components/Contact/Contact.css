@@ -13,8 +13,20 @@
 
 }
 
+label{
+    color: #2f2855;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 .form-Container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    
 }
 
 .form-Submit{
