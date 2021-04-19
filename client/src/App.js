@@ -9,12 +9,20 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <About></About>
-      <Portfolio></Portfolio>
-      <Contact></Contact>
-      <Footer></Footer>
+   
+      <Navbar/>
+      
+     
+      <Hero/>
+   
+      <About/>
+   
+      <Portfolio/>
+      <Contact/>
+     
+
+      <Footer/>
+     
     </div>
   );
 }

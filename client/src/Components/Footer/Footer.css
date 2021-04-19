@@ -1,24 +1,25 @@
-.section-Footer{
+.section-Footer {
     background-color: #29224C;
     height: 20vh;
     width: 100vw;
 }
 
-.contact-info{
-    color: #DFFF00;  
+.contact-info {
+    color: #DFFF00;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.25rem;
     text-align: center;
     padding-top: 3rem;
 }
 
-.socials{
-    
-        color: #DFFF00;  
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 1.25rem;
-        text-align: left;
-        
-    
+.socials {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;   
+    }
+
+.socials > img:hover{
+    cursor: pointer;
 }
+
 

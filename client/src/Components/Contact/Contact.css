@@ -1,40 +1,58 @@
-.section-Contact{
+.section-Contact {
     background-color: white;
     height: 90vh;
 }
 
-.contactTitle{
+.contactTitle {
     color: #2f2855;
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 2.5rem;
     padding-top: 1.5em;
     padding-bottom: .5em;
-
 }
 
-label{
+label {
     color: #2f2855;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-.form-Container{
+.form-Container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
-    
+    margin: 0% 5%;
 }
 
-.form-Submit{
+.form-Container>input::placeholder {
+    font-size: 1rem;
+    vertical-align: text-top;
+}
+
+.form-Name {
+    height: 2.5rem;
+}
+
+.form-Subject {
+    height: 2.5rem;
+}
+
+.form-Message {
+    height: 10rem;
+}
+
+.form-Container>label {
+    padding-top: 2rem;
+}
+
+.form-Submit {
     width: 8rem;
     height: 1.75rem;
     font-size: 1rem;
     color: #2f2855;
     font-family: 'IBM Plex Mono', monospace;
     padding-bottom: 1.25rem;
-    
+    align-self: flex-start;
 }
