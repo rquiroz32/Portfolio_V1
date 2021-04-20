@@ -53,7 +53,7 @@ app.post('/sendMail', (req, res) => {
     console.log(req.body)
 
     const options = {
-        from: 'rgqdev32@outlook.com',
+        from: process.OUTLOOK_EMAIL,
         to: process.env.PERSONAL_EMAIL,
         subject: Subject,
         text: `New Message from ${Name} : \n \n ${Message}`
