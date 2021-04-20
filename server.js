@@ -11,12 +11,24 @@ app.use(express.urlencoded({ extended: true }));
 // add env variables from .env
 dotenv.config()
 
+const transporterUserName = process.env.OUTLOOK_EMAIL
+const transporterPW = process.env.OUTLOOK_PW
+
 //Create transporter with Auth info from .env
 const transporter = nodemailer.createTransport({
-    service:'hotmail',
+    host: "smtp-mail.outlook.com",
+    secureConnection: false,
+    port: 587,
+    tls: {
+        ciphers: 'SSLv3'
+    },
+    // auth: {
+    //     user: process.env.OUTLOOK_EMAIL,
+    //     pass: process.env.OUTLOOK_PW
+    // }
     auth:{
-        user:  process.env.OUTLOOK_EMAIL,
-        pass: process.env.OUTLOOK_PW
+        user:transporterUserName,
+        pass: transporterPW
     }
 });
 
@@ -38,8 +50,10 @@ app.post('/sendMail', (req, res) => {
     const Subject = req.body.Subject
     const Message = req.body.Message
 
+    console.log(req.body)
+
     const options = {
-        from: process.env.OUTLOOK_EMAIL,
+        from: 'rgqdev32@outlook.com',
         to: process.env.PERSONAL_EMAIL,
         subject: Subject,
         text: `New Message from ${Name} : \n \n ${Message}`
@@ -51,7 +65,7 @@ app.post('/sendMail', (req, res) => {
             //log any errors and send to both client and server
             console.log(err)
             res.status(500).send('Internal Server Error sending email, error listed below: \n ' + err)
-        }        
+        }
         console.log('Sent: \n ' + info.response)
         res.sendStatus(200);
     })
