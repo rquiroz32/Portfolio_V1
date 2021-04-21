@@ -6,13 +6,21 @@ const dotenv = require('dotenv');
 const nodemailer = require('nodemailer')
 
 //express middleware
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(function(req,res,next){
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+    next()
+})
+// app.use(express.urlencoded({ extended: true}), express.json());
 
 // add env variables from .env
 dotenv.config()
 
 const transporterUserName = process.env.OUTLOOK_EMAIL
 const transporterPW = process.env.OUTLOOK_PW
+const personalEmail = process.env.PERSONAL_EMAIL
 
 //Create transporter with Auth info from .env
 const transporter = nodemailer.createTransport({
@@ -23,8 +31,8 @@ const transporter = nodemailer.createTransport({
         ciphers: 'SSLv3'
     },
     // auth: {
-    //     user: process.env.OUTLOOK_EMAIL,
-    //     pass: process.env.OUTLOOK_PW
+    //     user: 'rgqdev32@outlook.com',
+    //     pass: 'Raiders3290!'
     // }
     auth:{
         user:transporterUserName,
@@ -53,8 +61,8 @@ app.post('/sendMail', (req, res) => {
     console.log(req.body)
 
     const options = {
-        from: process.OUTLOOK_EMAIL,
-        to: process.env.PERSONAL_EMAIL,
+        from: transporterUserName,
+        to: personalEmail,
         subject: Subject,
         text: `New Message from ${Name} : \n \n ${Message}`
     };
@@ -68,17 +76,10 @@ app.post('/sendMail', (req, res) => {
         }
         console.log('Sent: \n ' + info.response)
         res.sendStatus(200);
+        // res.send('this is a message')
     })
 
 })
-
-
-
-
-
-
-
-
 
 
 
