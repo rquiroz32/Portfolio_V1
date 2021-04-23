@@ -72,9 +72,7 @@
 }
 
 @media all and (max-width:768px){
-    .section-About{
-        /* height: 100vh; */
-    }
+ 
     .aboutContainer{
         flex-direction: column;
         align-content: space-around;
