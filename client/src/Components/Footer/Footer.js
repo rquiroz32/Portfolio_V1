@@ -36,7 +36,7 @@ class Footer extends Component {
                     <p>Phone: 7324230560</p>
                 </div> */}
                 <div className='socials'>
-                    <img src={gmail} onClick={handleGmail} alt='gmail icon'></img>
+                    <img src={require(gmail)} onClick={handleGmail} alt='gmail icon'></img>
                     <img src={github} onClick={handleGitHubOnClick} alt = 'github icon'></img>
                     <img src={linkedin} onClick={handleLinkedInOnClick} alt ='linkedin icon'></img>
                 </div>

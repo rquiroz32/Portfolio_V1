@@ -11,13 +11,13 @@ class Hero extends Component {
 
         return (
             <header className="Hero">
-                <img className="HeroImg" src={image}></img>
+                <img className="HeroImg" src={image} alt='background image'></img>
 
                 <div className="contentContainer">
                     <div className='universal-Test'>
                         <h1 className="HeroTxt">Hi I'm Richard, <br /> I'm a Full Stack Web Developer. </h1>
                     </div>
-                    
+
                     <div className="BtnContainer">
                         <button className="HeroBtn" onClick={handlePortfolioBtn} >See My Work</button>
                         <button className="HeroBtn" onClick={handleContactBtn} >Get in Touch</button>
