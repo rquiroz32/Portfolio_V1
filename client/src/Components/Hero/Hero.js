@@ -11,7 +11,7 @@ class Hero extends Component {
 
         return (
             <header className="Hero">
-                <img className="HeroImg" src={image} alt='background image'></img>
+                <img className="HeroImg" src={image} alt='backgroundIMG'></img>
 
                 <div className="contentContainer">
                     <div className='universal-Test'>
