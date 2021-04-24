@@ -7,7 +7,7 @@ function ProjectCard(props) {
 
         <div className='project-Card'>
             <h3 className='project-Title'>{props.projTitle}</h3>
-            <img className='project-Image' src={props.projImage}></img>
+            <img className='project-Image' src={props.projImage} alt='projectImage'></img>
             <p className='project-Description'>{props.projDescription}</p>
 
             <div className='project-BtnContainer'>

@@ -5,15 +5,12 @@ const PORT = process.env.PORT || 3001;
 const dotenv = require('dotenv');
 const nodemailer = require('nodemailer')
 
-//express middleware
-// app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(function(req,res,next){
     res.header("Access-Control-Allow-Origin", "*")
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
     next()
 })
-// app.use(express.urlencoded({ extended: true}), express.json());
 
 // add env variables from .env
 dotenv.config()
@@ -29,11 +26,7 @@ const transporter = nodemailer.createTransport({
     port: 587,
     tls: {
         ciphers: 'SSLv3'
-    },
-    // auth: {
-    //     user: 'rgqdev32@outlook.com',
-    //     pass: 'Raiders3290!'
-    // }
+    }, 
     auth:{
         user:transporterUserName,
         pass: transporterPW

@@ -11,14 +11,9 @@
 
 */
 
- .Hero{
-  
+.Hero {
   height: 100vh;
-  
-  
-  
-} 
-
+}
 
 header {
   height: 600px;
@@ -28,19 +23,16 @@ header {
   position: relative;
 }
 
-.contentContainer{
+.contentContainer {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   top: 20%;
-  left:0;  
+  left: 0;
   margin: 0vw 5vw;
-  
 }
-
-
 
 /*.contentContainer > h1, button{
  margin: 0em 4em;
@@ -48,39 +40,38 @@ header {
 
 .HeroImg {
   width: 100%;
-  height: 100vh;  
+  height: 100vh;
   opacity: 0.4;
   overflow: hidden;
-  
-
 }
 
-
-.HeroTxt{
+.HeroTxt {
   max-width: 10em;
   /* font-size: 7rem; */
   font-size: 5vw;
   font-family: 'IBM Plex Mono', monospace;
-  color: #DFFF00;   
-  }
-
-.BtnContainer{
-    height: 15em;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around; 
-   margin-left: 9rem;
+  color: #DFFF00;
 }
 
-.HeroBtn{
+.BtnContainer {
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 9rem;
+}
+
+.HeroBtn {
   cursor: pointer;
   border: none;
-    border-style: solid;
+  border-style: solid;
   border-color: #DFFF00;
   border-width: .5em;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.30rem;
-  background: #fff; /* fallback color for old browsers */background: rgba(255, 255, 255, 0.2);
+  background: #fff;
+  /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.2);
   color: #DFFF00;
   width: 25vw;
   height: 5em;
