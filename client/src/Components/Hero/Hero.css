@@ -78,3 +78,34 @@ header {
   max-width: 500px;
   margin: 1rem 0;
 }
+
+@media all and (max-width:768px){
+  
+
+  .contentContainer{
+    display: flex;
+    flex-direction: column;  
+    margin: 0vw 25vw;
+  }
+  .HeroTxt{
+    font-size: 2rem;
+    margin-bottom: 5vh;
+    
+  }
+
+  .HeroBtn{
+    height: 4em;
+    font-size: 1rem;
+  }
+
+  .BtnContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+  }
+    
+  #rightHeroBtn{
+    margin-left: 1rem;
+  }
+  
+}

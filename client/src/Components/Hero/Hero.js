@@ -19,8 +19,8 @@ class Hero extends Component {
                     </div>
 
                     <div className="BtnContainer">
-                        <button className="HeroBtn" onClick={handlePortfolioBtn} >See My Work</button>
-                        <button className="HeroBtn" onClick={handleContactBtn} >Get in Touch</button>
+                        <button className="HeroBtn" id='leftHeroBtn' onClick={handlePortfolioBtn} >See My Work</button>
+                        <button className="HeroBtn" id='rightHeroBtn' onClick={handleContactBtn} >Get in Touch</button>
                     </div>
                 </div>
 

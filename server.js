@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3001;
 const dotenv = require('dotenv');
 const nodemailer = require('nodemailer')
 
+//Express Middleware for JSON and enabling CORS
 app.use(express.json());
 app.use(function(req,res,next){
     res.header("Access-Control-Allow-Origin", "*")
@@ -15,6 +16,7 @@ app.use(function(req,res,next){
 // add env variables from .env
 dotenv.config()
 
+//Variables for email form stuff
 const transporterUserName = process.env.OUTLOOK_EMAIL
 const transporterPW = process.env.OUTLOOK_PW
 const personalEmail = process.env.PERSONAL_EMAIL
@@ -53,6 +55,7 @@ app.post('/sendMail', (req, res) => {
 
     console.log(req.body)
 
+    // config options object
     const options = {
         from: transporterUserName,
         to: personalEmail,
