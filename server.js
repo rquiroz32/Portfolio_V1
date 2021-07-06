@@ -13,7 +13,6 @@ app.use(function(req,res,next){
     next()
 })
 
-
 // add env variables from .env
 dotenv.config()
 
