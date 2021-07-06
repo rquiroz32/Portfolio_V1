@@ -13,13 +13,22 @@
 }
 
 .socials {
+    margin-top: 3vh;
     display: flex;
     justify-content: space-around;
-    padding-top: 3%;   
-    }
-
-.socials > img:hover{
-    cursor: pointer;
+    padding-top: 3%;
 }
 
 
+.socials>img:hover {
+    cursor: pointer;
+}
+
+@media all and (max-width:768px) {
+    .socials {
+        margin: 3vh 0
+    }
+    .socials>img {
+        margin-top: 3vh;
+    }
+}
