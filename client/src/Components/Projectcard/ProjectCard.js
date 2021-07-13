@@ -2,6 +2,14 @@ import './ProjectCard.css'
 
 function ProjectCard(props) {
 
+    const handleRepo= ()=>{
+        window.location.href = props.projRepo
+    }
+
+    const handleDemo = ()=>{
+        window.location.href=props.projDemo
+    }
+
     return (
 
 
@@ -11,8 +19,8 @@ function ProjectCard(props) {
             <p className='project-Description'>{props.projDescription}</p>
 
             <div className='project-BtnContainer'>
-                <button className='project-Btn'>GitHub</button>
-                <button className='project-Btn'>Demo</button>
+                <button onClick={handleRepo} className='project-Btn'>GitHub</button>
+                <button onClick={handleDemo} className='project-Btn'>Demo</button>
             </div>
             
         </div>
