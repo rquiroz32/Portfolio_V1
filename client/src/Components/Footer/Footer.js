@@ -13,7 +13,7 @@ class Footer extends Component {
     render() {
 
         // const personalEmail = process.env.REACT_APP_PERSONAL_EMAIL
-        const {REACT_APP_PERSONAL_EMAIL} = process.env;
+        //const {REACT_APP_PERSONAL_EMAIL} = process.env;
 
         const handleLinkedInOnClick = ()=>{
             window.location.href='https://www.linkedin.com/in/richard-quiroz-csm-a9880155/'
@@ -25,7 +25,7 @@ class Footer extends Component {
 
         const handleGmail=()=>{
             console.log(`the email is ${REACT_APP_PERSONAL_EMAIL}`)
-            // window.location.href=`mailto:${process.env.REACT_APP_PERSONAL_EMAIL}`
+            window.location.href=`mailto:${process.env.REACT_APP_PERSONAL_EMAIL}`
         }
 
         return (
