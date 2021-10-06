@@ -17,6 +17,7 @@
 .project-Image {
     display: block;
     width: 25vw;
+    height: 50vh;
     margin: 2rem auto;
     
     /* margin: .25rem 10rem; */
@@ -63,6 +64,13 @@
 }
 .project-Image{
     margin:2rem auto;
+    width: 80vw;
       
 }
+
+.project-Description{
+    padding: 0rem 0rem;
+    width: 80vw;
+}
+
 }
