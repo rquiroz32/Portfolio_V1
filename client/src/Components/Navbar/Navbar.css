@@ -25,41 +25,6 @@
     list-style-type: none;
     padding: 20px 0px;
 }
-/*
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-left: 5vw;
-}
-
-.nav-active{
-    transform: translateX(0%);
-} 
-
-.nav a {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 2rem;
-    color: #DFFF00;
-    text-decoration: none;
-}
-
-.nav a:visited {
-    color: #DFFF00;
-}
-
-.nav a:hover {
-    color: #DFFF00;
-    opacity: 50%;
-}
-
-.nav a:active {
-     color:#DFFF00;
-    color: white;
-}
-*/
-
 
 .nav-links {
     display: flex;
@@ -96,18 +61,6 @@
 }
 
 
-
-
-/* .nav.expanded {
-    flex-direction: column;
-    width: 100%;
-    max-width: 250px;
-    left: auto;
-    right: 0;
-    position: fixed;
-    height: 100vh;       
-
-} */
 
 
 
@@ -160,19 +113,10 @@
     .nav {
         left: auto;
         right: -250px;
-        /* transition: all 0.4s ease-in-out; */
+        
     }
 
-    /*.nav.expanded {
-        flex-direction: column;
-        width: 100%;
-        max-width: 250px;
-        left: auto;
-        right: 0;
-        position: fixed;
-        height: 100vh;       
-
-    }*/
+   
 
     .nav-links {
         display: flex;
@@ -210,34 +154,5 @@
     
 
     
-    /* .burger {
-        display: block;
-        
-        
-        position: absolute;
-        left: 0px;
-        
-        padding-right: 1em;
-    } */
-
-    /*
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        background-color: #171233;
-        top: 8vh;
-        width: 50%;
-        transform: var(--transformHidden-value);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-    */
+    
 }
