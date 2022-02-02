@@ -1,23 +1,38 @@
 import { Component } from "react"
+import Burger from "../Burger/Burger"
 import "./Navbar.css"
 
 
 
 class Navbar extends Component {
 
-   handleClick = ()=>{
-    const nav = document.querySelector('.nav-links');
-    nav.classList.toggle('nav-active');
-   }
+    constructor(props) {
+        super(props)
+        this.toggle = this.toggle.bind(this)
+        this.state = {
+            isOpen: false
+        }
+    }
+
+  
+
+    toggle = () => { this.setState(state => ({ isOpen: !state.isOpen, })) };
+
+
     
 
+
     render() {
+
+
+        return ([
         
+            <Burger toggle={this.toggle}/>,
 
-        return (
-            <nav className="nav">
 
-                <ul className="nav-links">
+            <nav className={"nav" + (this.state.isOpen ? " expanded" : "")}>              
+
+                <ul className={"nav-links" + (this.state.isOpen ? "" : " hidden")}>
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -31,16 +46,10 @@ class Navbar extends Component {
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div className="burger" onClick={this.handleClick}>
-                    <div className="line1"></div>
-                    <div className="line2"></div>
-                    <div className="line3"></div>
-                </div>
-
-
-
+                
             </nav>
-        )
+
+        ])
     }
 
 }
